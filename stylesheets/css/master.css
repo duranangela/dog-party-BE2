@@ -1,0 +1,79 @@
+body {
+  display: grid;
+  grid-template-rows: 40px 400px 460px 210px;
+  --txt: dodgerblue;
+  font-family: arial;
+}
+
+nav {
+  background-color: lightblue;
+  display: block;
+}
+
+nav img {
+  float: left;
+}
+
+nav p {
+  display: inline;
+  float: right;
+  padding: 0px 15px;
+  color: white;
+}
+
+header {
+  background-image: url('../../images/park.jpg');
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  border-radius: 50%;
+  border: 4px solid var(--txt);
+}
+
+.box {
+  color: var(--txt);
+  padding: 5px;
+  border: 4px solid var(--txt);
+  background-color: white
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+section img {
+  border-radius: 50%;
+  border: 4px solid var(--txt);
+  height: 125px;
+  width: 125px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--txt);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
